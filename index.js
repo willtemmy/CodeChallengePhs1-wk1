@@ -29,6 +29,7 @@ if (speed < 70) {
 } else {
 //For every 5 km/s above the speed limit (70), it should give the driver one demerit point and print the points.   
   let demeritPoints = Math.floor((speed - 70) / 5);
+//If driver gets more than 12 points, should print "License suspended"  
   if (demeritPoints > 12) {
     console.log("License suspended");
   } else {
