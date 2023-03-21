@@ -1,3 +1,4 @@
+//STUDENT GRADE GENERATOR
 //Prompt that allows user to input student marks.
 let marks = prompt("Enter student marks (between 0 and 100):");
 
@@ -20,6 +21,7 @@ if (marks > 79) {
   console.log("Grade: E");
 }
 
+//SPEED DETECTOR
 //Prompt that takes as input the speed of a car e.g 80.
 let speed = prompt("Enter car speed:");
 
