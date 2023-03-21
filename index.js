@@ -23,16 +23,22 @@ if (marks > 79) {
 //Prompt that takes as input the speed of a car e.g 80.
 let speed = prompt("Enter car speed:");
 
+//Validates input ensuring its a number.
+while (isNaN(speed)) {
+  speed = prompt("Invalid input. Enter car speed:");
+}
+
 // If the speed is less than 70, it should print “Ok”.
 if (speed < 70) {
   console.log("Ok");
 } else {
-//For every 5 km/s above the speed limit (70), it should give the driver one demerit point and print the points.   
+//For every 5 km/s above the speed limit (70), it should give the driver one demerit point.   
   let demeritPoints = Math.floor((speed - 70) / 5);
 //If driver gets more than 12 points, should print "License suspended"  
   if (demeritPoints > 12) {
     console.log("License suspended");
   } else {
+//Prints the demerit points.
     console.log("Points: " + demeritPoints);
   }
 }
